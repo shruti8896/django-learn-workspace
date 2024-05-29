@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Detailed Blog
+{% endblock title %}
+
+{% block css_files %}
+
+<link rel="stylesheet" href="{% static 'my_blogs/post-detail.css'%}">
+<!-- <link rel="stylesheet" href="{% static "my_blogs/all-post.css"%}"> -->
+{% comment %} <link rel="stylesheet" href="{% static 'my_blogs/post.css'%}"> {% endcomment %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<section>
+<h2>Single Post Title </h2>
+
+<article>
+    <img src="" alt="Single-Post-Img"/>
+    <address>By Shruti</address>
+    <div>
+        last updated on <time> May 28th</time>
+    </div>
+
+</article>
+
+</section>
+
+<main>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sequi vero nulla, repellendus libero obcaecati. Facere laboriosam veritatis maxime unde voluptates autem qui voluptas magnam, suscipit sapiente praesentium sint quam?
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime aspernatur quod sit numquam, porro vel maiores fugiat mollitia sunt, ab, quaerat vero voluptate saepe. Sunt expedita veniam ipsum impedit accusantium?
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit asperiores ea porro eligendi vero corporis dignissimos quia nulla velit, vitae, placeat nam fugiat, libero officia optio ratione fuga officiis quae!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad accusantium qui dolorum molestias exercitationem dolore delectus voluptatum. Voluptatibus quidem dolor eius quos asperiores, vitae, tempora exercitationem perspiciatis libero pariatur porro.
+    </p>
+
+</main>
+
+{% endblock %}

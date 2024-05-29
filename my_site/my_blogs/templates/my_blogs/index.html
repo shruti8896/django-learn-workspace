@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{%load static%}
+
+{% block title %}
+    My Blog
+{% endblock title %}
+
+{% block css_files %}
+
+<link rel="stylesheet" href="{% static 'my_blogs/index.css'%}">
+<link rel="stylesheet" href="{% static "my_blogs/all-post.css" %}">
+{% comment %} <link rel="stylesheet" href="{% static 'my_blogs/post.css'%}"> {% endcomment %}
+
+{% endblock %}
+
+
+{% block content %}
+    
+    
+    <!-- section 1 starts -->
+    <section id="welcome">
+        <header>
+            <img src="{% static "my_blogs/images/shruti.jpg" %}" alt="Shruti - The author of this Blog">
+            <h1>SHRUTI'S Blogs</h1>
+        </header>
+        <p>
+            Hello!! welcome to My Blogs page where I update blogs of latest technologies and languages on daily basis. Please Make sure to hit the like button.
+        </p>
+    </section>
+    <!-- section 1 ends -->
+
+    <!-- section 2 starts -->
+
+    <div id="section2parent">
+        <section id="latest-blogs">
+            <h2>My Latest Thoughts</h2>
+            <ul>
+                {% include "my_blogs/includes/post.html" %}
+            </ul>
+        </section>
+
+
+    </div>
+
+    <!-- section 2 ends -->
+
+    <!-- section 3 starts -->
+
+    <section id="about">
+        <h2>What I do</h2>
+        <p>
+            The sun peeked over the horizon, casting a warm glow on the sleepy town. Birds chirped, welcoming the day's first light as life stirred awake.
+        </p>
+
+        <p>
+            In the bustling city, skyscrapers towered over busy streets filled with hurried commuters. Car horns blared, mingling with the chatter of people rushing to work.
+        </p>
+
+
+    </section>
+
+    <!-- section 3 ends -->
+
+{% endblock content %}
